@@ -1,0 +1,208 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog · Bootstrap</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        .blog-header-logo {
+            font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+            font-size: 2.25rem;
+        }
+        
+        .blog-header-logo:hover {
+            text-decoration: none;
+        }
+
+        /* 🔥 FONDO NUEVO */
+        body {
+            background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+            url('https://i.pinimg.com/736x/79/f7/35/79f735bdc978bb91c3459899cad1a99a.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+        }
+
+        a {
+            color: #cfd8ff;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        .blog-post-meta {
+            color: #ccc;
+        }
+
+        .flex-auto {
+            flex: 0 0 auto;
+        }
+
+        .h-250 { height: 250px; }
+
+        @media (min-width: 768px) {
+            .h-md-250 { height: 250px; }
+        }
+
+        .blog-pagination {
+            margin-bottom: 4rem;
+        }
+
+        .blog-post {
+            margin-bottom: 4rem;
+        }
+    </style>
+</head>
+
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<div class="container">
+
+    <header class="border-bottom lh-1 py-3 text-white">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <a class="blog-header-logo text-white text-decoration-none" href="index.html">
+                    Mi blog personal
+                </a>
+            </div>
+        </div>
+    </header>
+
+</div>
+
+<main class="container">
+
+    <!-- DESTACADO -->
+    <div class="p-4 p-md-5 mb-4 rounded text-white bg-dark bg-opacity-75">
+        <div class="col-lg-6 px-0">
+            <h1 class="display-4 fst-italic">Carolina Rodriguez Bobrosky</h1>
+            <p class="lead mb-0">
+                <a href="#blogpost" class="fw-bold">Ver biografia...</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- TARJETAS -->
+    <div class="row mb-2">
+
+        <div class="col-md-6">
+            <div class="row g-0 border border-light rounded overflow-hidden flex-md-row mb-4 shadow bg-dark bg-opacity-75 h-md-250 position-relative">
+                
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="mb-2">Proyectos TEDed</strong>
+                    <h3 class="mb-0">Mi charla TED</h3>
+                    <div class="mb-1">Nov 12</div>
+                    <p class="card-text mb-auto">
+                        En la escuela desarrollé una charla TED sobre cómo las personas funcionan mejor cuando colaboran.
+                    </p>
+                    <a href="https://docs.google.com/document/d/1P44SYMCOGPV3Mo2cji-S0ab_B0InbeHj2QehtXMgdrI/edit?usp=sharing" class="stretched-link">
+                        Ver charla →
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="row g-0 border border-light rounded overflow-hidden flex-md-row mb-4 shadow bg-dark bg-opacity-75 h-md-250 position-relative">
+                
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="mb-2">Trabajos personalizados</strong>
+                    <h3 class="mb-0">Álbum de figuritas</h3>
+                    <div class="mb-1">Nov 11</div>
+                    <p class="mb-auto">
+                        Un Álbum de figuritas diseñado por mí.
+                    </p>
+                    <a href="https://canva.link/rpx3nm67wl3y8wm" class="stretched-link">
+                        Ver más →
+                    </a>
+                </div>
+
+                <div class="col-auto d-none d-lg-block">
+                    <img src="IMG_2544.jpg"
+                    style="width: 200px; height: 250px; object-fit: cover;">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CONTENIDO -->
+    <div class="row g-5">
+
+        <div class="col-md-8">
+
+            <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                Artículos recientes
+            </h3>
+
+            <section id="blogpost"></section>
+
+            <article class="blog-post">
+                <h2 class="mb-1">Mi biografia</h2>
+                <p class="blog-post-meta">1 de enero, 2024</p>
+
+                <img src="IMG_1046.jpg" style="width:150px;" class="mb-3 rounded">
+
+                <p>
+                    Mi nombre es Carolina, nací el 6 de mayo de 2010. Fui a la primaria Bialik y me gradué en 2022.
+                    Continué en ORT, donde sigo estudiando informática.
+                </p>
+
+                <hr>
+
+                <h5>Habilidades</h5>
+                <ul>
+                    <li>💻 Programar</li>
+                    <li>🎨 Diseñar</li>
+                    <li>🗣️ Oratoria</li>
+                </ul>
+
+            </article>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="col-md-4">
+
+            <div class="position-sticky" style="top: 2rem;">
+
+                <div class="p-4 mb-3 bg-dark bg-opacity-75 rounded text-white">
+                    <h4>Acerca de Carolina</h4>
+                    <p>
+                        Soy estudiante de ORT Rosario, deportista y con interés en programación.
+                    </p>
+                </div>
+
+                <div class="p-4">
+                    <h4>Redes</h4>
+                    <ol class="list-unstyled">
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ol>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<footer class="py-5 text-center text-white">
+    <p>Template adaptado con Bootstrap</p>
+</footer>
+
+</body>
+</html>
